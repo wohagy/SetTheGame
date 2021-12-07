@@ -8,7 +8,9 @@
 import UIKit
 
 @IBDesignable class CardButton: UIButton {
-    
+    @IBInspectable var borderColor: UIColor = defaultValuelsBorderColor 
+        
+    }
     
 
 }
