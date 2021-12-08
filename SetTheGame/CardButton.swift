@@ -12,7 +12,7 @@ class CardButton: UIButton {
         didSet {
             layer.borderColor = borderColor.cgColor
         }
-        
+ 
     }
     @IBInspectable var borderWidth: CGFloat = DefaultValues.borderWidth {
         didSet{

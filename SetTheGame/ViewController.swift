@@ -11,9 +11,17 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        updateViewFromModel()
     }
 
-
+    @IBOutlet var cards: [CardButton]!
+    
+    private func updateViewFromModel() {
+        for index in cards.indices{
+            if index < 12 {
+                cards[index].setTitle(String(index), for: UIControl.State.normal)
+        }
+    }
+}
 }
 
