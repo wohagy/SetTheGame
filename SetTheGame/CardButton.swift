@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CardButton: UIButton {
+@IBDesignable class CardButton: UIButton {
     @IBInspectable var borderColor: UIColor = DefaultValues.borderColor {
         didSet {
             layer.borderColor = borderColor.cgColor
