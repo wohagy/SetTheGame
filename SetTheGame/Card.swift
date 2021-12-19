@@ -8,13 +8,13 @@
 import Foundation
 
 struct Card: Equatable, CustomStringConvertible {
-    static func == (lhs: Card, rhs: Card) -> Bool {
-        return ((lhs.number==rhs.number) &&
-                (lhs.color==rhs.color) &&
-                (lhs.fill==rhs.fill) &&
-                (lhs.shape)==(rhs.shape)
-        )
-    }
+//    static func == (lhs: Card, rhs: Card) -> Bool {
+//        return ((lhs.number==rhs.number) &&
+//                (lhs.color==rhs.color) &&
+//                (lhs.fill==rhs.fill) &&
+//                (lhs.shape)==(rhs.shape)
+//        )
+//    }
     
     
     var description: String

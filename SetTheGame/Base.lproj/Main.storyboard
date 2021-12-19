@@ -32,6 +32,11 @@
 ● 
 ■</string>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="zd9-LB-PEW" customClass="CardButton" customModule="SetTheGame" customModuleProvider="target">
                                                 <rect key="frame" x="95.5" y="0.0" width="87.5" height="91"/>
@@ -42,6 +47,11 @@
 ● 
 ■</string>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Luf-fB-nGr" customClass="CardButton" customModule="SetTheGame" customModuleProvider="target">
                                                 <rect key="frame" x="191" y="0.0" width="87.5" height="91"/>
@@ -52,6 +62,11 @@
 ● 
 ■</string>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="tbh-Qt-euz" customClass="CardButton" customModule="SetTheGame" customModuleProvider="target">
                                                 <rect key="frame" x="286.5" y="0.0" width="87.5" height="91"/>
@@ -62,6 +77,11 @@
 ● 
 ■</string>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -77,6 +97,11 @@
 ● 
 ■</string>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="1Zc-3H-H43" customClass="CardButton" customModule="SetTheGame" customModuleProvider="target">
                                                 <rect key="frame" x="95.5" y="0.0" width="87.5" height="91"/>
@@ -87,6 +112,11 @@
 ● 
 ■</string>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="v9S-Is-Sip" customClass="CardButton" customModule="SetTheGame" customModuleProvider="target">
                                                 <rect key="frame" x="191" y="0.0" width="87.5" height="91"/>
@@ -97,6 +127,11 @@
 ● 
 ■</string>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="7DF-ap-ljn" customClass="CardButton" customModule="SetTheGame" customModuleProvider="target">
                                                 <rect key="frame" x="286.5" y="0.0" width="87.5" height="91"/>
@@ -107,6 +142,11 @@
 ● 
 ■</string>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -122,6 +162,11 @@
 ● 
 ■</string>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="1Rj-J5-4W0" customClass="CardButton" customModule="SetTheGame" customModuleProvider="target">
                                                 <rect key="frame" x="95.5" y="0.0" width="87.5" height="91"/>
@@ -132,6 +177,11 @@
 ● 
 ■</string>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ycg-Gw-ojD" customClass="CardButton" customModule="SetTheGame" customModuleProvider="target">
                                                 <rect key="frame" x="191" y="0.0" width="87.5" height="91"/>
@@ -142,6 +192,11 @@
 ● 
 ■</string>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="eVP-Aq-YtS" customClass="CardButton" customModule="SetTheGame" customModuleProvider="target">
                                                 <rect key="frame" x="286.5" y="0.0" width="87.5" height="91"/>
@@ -152,6 +207,11 @@
 ● 
 ■</string>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -167,6 +227,11 @@
 ● 
 ■</string>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="MHA-G7-xRl" customClass="CardButton" customModule="SetTheGame" customModuleProvider="target">
                                                 <rect key="frame" x="95.5" y="0.0" width="87.5" height="91"/>
@@ -177,6 +242,11 @@
 ● 
 ■</string>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="RQf-SX-Jji" customClass="CardButton" customModule="SetTheGame" customModuleProvider="target">
                                                 <rect key="frame" x="191" y="0.0" width="87.5" height="91"/>
@@ -187,6 +257,11 @@
 ● 
 ■</string>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="6tP-dA-8M2" customClass="CardButton" customModule="SetTheGame" customModuleProvider="target">
                                                 <rect key="frame" x="286.5" y="0.0" width="87.5" height="91"/>
@@ -197,6 +272,11 @@
 ● 
 ■</string>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -212,6 +292,11 @@
 ● 
 ■</string>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="1We-I3-Rnp" customClass="CardButton" customModule="SetTheGame" customModuleProvider="target">
                                                 <rect key="frame" x="95.5" y="0.0" width="87.5" height="91"/>
@@ -222,6 +307,11 @@
 ● 
 ■</string>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="JQ0-mn-d1E" customClass="CardButton" customModule="SetTheGame" customModuleProvider="target">
                                                 <rect key="frame" x="191" y="0.0" width="87.5" height="91"/>
@@ -232,6 +322,11 @@
 ● 
 ■</string>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="f7i-46-X1Z" customClass="CardButton" customModule="SetTheGame" customModuleProvider="target">
                                                 <rect key="frame" x="286.5" y="0.0" width="87.5" height="91"/>
@@ -242,6 +337,11 @@
 ● 
 ■</string>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -257,6 +357,11 @@
 ● 
 ■</string>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="TnB-qc-BeL" customClass="CardButton" customModule="SetTheGame" customModuleProvider="target">
                                                 <rect key="frame" x="95.5" y="0.0" width="87.5" height="91"/>
@@ -267,6 +372,11 @@
 ● 
 ■</string>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="vwq-0K-XOb" customClass="CardButton" customModule="SetTheGame" customModuleProvider="target">
                                                 <rect key="frame" x="191" y="0.0" width="87.5" height="91"/>
@@ -277,6 +387,11 @@
 ● 
 ■</string>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="4FE-Wc-KMs" customClass="CardButton" customModule="SetTheGame" customModuleProvider="target">
                                                 <rect key="frame" x="286.5" y="0.0" width="87.5" height="91"/>
@@ -287,6 +402,11 @@
 ● 
 ■</string>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -382,6 +502,89 @@
             <point key="canvasLocation" x="18.840579710144929" y="76.339285714285708"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="1Rj-J5-4W0">
+            <size key="intrinsicContentSize" width="30" height="91"/>
+        </designable>
+        <designable name="1We-I3-Rnp">
+            <size key="intrinsicContentSize" width="30" height="91"/>
+        </designable>
+        <designable name="1Zc-3H-H43">
+            <size key="intrinsicContentSize" width="30" height="91"/>
+        </designable>
+        <designable name="2vm-14-ZtP">
+            <size key="intrinsicContentSize" width="85" height="42"/>
+        </designable>
+        <designable name="4FE-Wc-KMs">
+            <size key="intrinsicContentSize" width="30" height="91"/>
+        </designable>
+        <designable name="6tP-dA-8M2">
+            <size key="intrinsicContentSize" width="30" height="91"/>
+        </designable>
+        <designable name="7DF-ap-ljn">
+            <size key="intrinsicContentSize" width="30" height="91"/>
+        </designable>
+        <designable name="7b7-Of-FqD">
+            <size key="intrinsicContentSize" width="45" height="42"/>
+        </designable>
+        <designable name="Atz-Zh-Bnk">
+            <size key="intrinsicContentSize" width="30" height="91"/>
+        </designable>
+        <designable name="Gq6-ah-mYz">
+            <size key="intrinsicContentSize" width="116" height="42"/>
+        </designable>
+        <designable name="JQ0-mn-d1E">
+            <size key="intrinsicContentSize" width="30" height="91"/>
+        </designable>
+        <designable name="Luf-fB-nGr">
+            <size key="intrinsicContentSize" width="30" height="91"/>
+        </designable>
+        <designable name="MHA-G7-xRl">
+            <size key="intrinsicContentSize" width="30" height="91"/>
+        </designable>
+        <designable name="Q6c-Y1-4uS">
+            <size key="intrinsicContentSize" width="30" height="91"/>
+        </designable>
+        <designable name="RQf-SX-Jji">
+            <size key="intrinsicContentSize" width="30" height="91"/>
+        </designable>
+        <designable name="TnB-qc-BeL">
+            <size key="intrinsicContentSize" width="30" height="91"/>
+        </designable>
+        <designable name="ab5-oz-cGd">
+            <size key="intrinsicContentSize" width="30" height="91"/>
+        </designable>
+        <designable name="eVP-Aq-YtS">
+            <size key="intrinsicContentSize" width="30" height="91"/>
+        </designable>
+        <designable name="f7i-46-X1Z">
+            <size key="intrinsicContentSize" width="30" height="91"/>
+        </designable>
+        <designable name="gZm-QA-dE8">
+            <size key="intrinsicContentSize" width="30" height="91"/>
+        </designable>
+        <designable name="jZ1-ys-ZfL">
+            <size key="intrinsicContentSize" width="30" height="91"/>
+        </designable>
+        <designable name="rdg-E2-paj">
+            <size key="intrinsicContentSize" width="30" height="91"/>
+        </designable>
+        <designable name="tbh-Qt-euz">
+            <size key="intrinsicContentSize" width="30" height="91"/>
+        </designable>
+        <designable name="v9S-Is-Sip">
+            <size key="intrinsicContentSize" width="30" height="91"/>
+        </designable>
+        <designable name="vwq-0K-XOb">
+            <size key="intrinsicContentSize" width="30" height="91"/>
+        </designable>
+        <designable name="ycg-Gw-ojD">
+            <size key="intrinsicContentSize" width="30" height="91"/>
+        </designable>
+        <designable name="zd9-LB-PEW">
+            <size key="intrinsicContentSize" width="30" height="91"/>
+        </designable>
+    </designables>
     <resources>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
