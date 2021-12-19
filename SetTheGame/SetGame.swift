@@ -34,11 +34,26 @@ struct SetGame {
         }
     }
     
-//    private mutating func replaceOrRemove3Cards() {
-//        if let take3Cards = take3FromDeck() {
-//            cardsOnTable.replaceSubrange(cardsTryMatched, with: take3Cards)
-//        } else {
-//            cardsOnTable.removeSubrange(cardsTryMatched)
-//        }
-//    }
+        private mutating func replaceOrRemove3Cards() {
+            if let take3Cards = take3FromDeck() {
+                cardsOnTable.replace(elements: cardsTryMatched, with: take3Cards)
+            } else {
+                cardsOnTable.remove(elements: cardsTryMatched)
+            }
+        }
+}
+
+extension Array where Element: Equatable {
+    mutating func replace(elements: [Element], with new: [Element]) {
+        guard elements.count == new.count else {return}
+        for index in 0..<new.count {
+            if let indexMathed = self.firstIndex(of: elements[index]) {
+                self [indexMathed] = new[index]
+            }
+        }
+    }
+    
+    mutating func remove(elements: [Element]) {
+        self = self.filter {!elements.contains($0)}
+    }
 }
