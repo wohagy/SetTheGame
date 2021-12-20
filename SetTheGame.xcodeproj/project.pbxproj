@@ -71,6 +71,7 @@
 				FACAEE82277094F000F3D223 /* Controller */,
 				FACA855B2759508D00D0901D /* Main.storyboard */,
 				FACA85602759509000D0901D /* LaunchScreen.storyboard */,
+				FACA85632759509000D0901D /* Info.plist */,
 				FACA85732759546400D0901D /* Supporting files */,
 			);
 			path = SetTheGame;
@@ -81,7 +82,6 @@
 			children = (
 				FACA85572759508D00D0901D /* SceneDelegate.swift */,
 				FACA855E2759509000D0901D /* Assets.xcassets */,
-				FACA85632759509000D0901D /* Info.plist */,
 				FACA85552759508D00D0901D /* AppDelegate.swift */,
 			);
 			path = "Supporting files";
