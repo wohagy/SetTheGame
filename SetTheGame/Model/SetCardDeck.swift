@@ -1,9 +1,3 @@
-//
-//  SetCardDeck.swift
-//  SetTheGame
-//
-//  Created by Macbook on 16.12.2021.
-//
 
 import Foundation
 

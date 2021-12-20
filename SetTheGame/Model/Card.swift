@@ -1,9 +1,3 @@
-//
-//  Card.swift
-//  SetTheGame
-//
-//  Created by Macbook on 02.12.2021.
-//
 
 import Foundation
 
@@ -17,7 +11,7 @@ struct Card: Equatable, CustomStringConvertible {
 //    }
     
     
-    var description: String
+    var description: String {return "\(number)-\(color)-\(shape)-\(fill)"}
     
     let number: Variant
     let color: Variant
