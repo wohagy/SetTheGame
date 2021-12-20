@@ -67,15 +67,10 @@
 		FACA85542759508D00D0901D /* SetTheGame */ = {
 			isa = PBXGroup;
 			children = (
-				FACA85592759508D00D0901D /* ViewController.swift */,
-				FACA8578275954CD00D0901D /* Card.swift */,
-				FA3BA1A0276B62A7001DE760 /* SetCardDeck.swift */,
-				FA3BA1A3276B7886001DE760 /* SetGame.swift */,
-				FA79A7D7275AA94B00D4856F /* CardButton.swift */,
+				FACAEE842770950F00F3D223 /* Model */,
+				FACAEE82277094F000F3D223 /* Controller */,
 				FACA855B2759508D00D0901D /* Main.storyboard */,
 				FACA85602759509000D0901D /* LaunchScreen.storyboard */,
-				FACA855E2759509000D0901D /* Assets.xcassets */,
-				FACA85632759509000D0901D /* Info.plist */,
 				FACA85732759546400D0901D /* Supporting files */,
 			);
 			path = SetTheGame;
@@ -85,9 +80,30 @@
 			isa = PBXGroup;
 			children = (
 				FACA85572759508D00D0901D /* SceneDelegate.swift */,
+				FACA855E2759509000D0901D /* Assets.xcassets */,
+				FACA85632759509000D0901D /* Info.plist */,
 				FACA85552759508D00D0901D /* AppDelegate.swift */,
 			);
 			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		FACAEE82277094F000F3D223 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FA79A7D7275AA94B00D4856F /* CardButton.swift */,
+				FACA85592759508D00D0901D /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FACAEE842770950F00F3D223 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA3BA1A3276B7886001DE760 /* SetGame.swift */,
+				FA3BA1A0276B62A7001DE760 /* SetCardDeck.swift */,
+				FACA8578275954CD00D0901D /* Card.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
