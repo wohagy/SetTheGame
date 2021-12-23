@@ -19,6 +19,22 @@ import UIKit
         }
     }
     
+    var disable: Bool {
+        get{
+            return !isEnabled
+        }
+        set{
+            if newValue {
+            isEnabled = false
+            borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0)
+        } else {
+            isEnabled = true
+            borderColor = DefaultValues.borderColor
+            }
+        }
+    }
+    
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         configure()
