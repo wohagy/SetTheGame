@@ -28,6 +28,7 @@ struct Card: Equatable, CustomStringConvertible {
             cards.reduce(0, {$0 + $1.shape.rawValue}),
             cards.reduce(0, {$0 + $1.number.rawValue})
         ]
+        print("isSet func: sum = \(sum). Something: \(sum.reduce(true, { $0 && ($1 % 3 == 0) })) ")
         return sum.reduce(true, { $0 && ($1 % 3 == 0) })
     }
 }

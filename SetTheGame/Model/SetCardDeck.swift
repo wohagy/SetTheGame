@@ -19,9 +19,9 @@ struct SetCardDeck {
                 for shape in Card.Variant.allCases {
                     for fill in Card.Variant.allCases {
                         cards.append(Card(number: number,
-                                              color: color,
-                                              shape: shape,
-                                               fill: fill))
+                                          color: color,
+                                          shape: shape,
+                                          fill: fill))
                     }
                 }
             }
