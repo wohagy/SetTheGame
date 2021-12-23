@@ -12,17 +12,19 @@ struct SetCardDeck {
             return nil
         }
     }
-        
+    
+    init() {
+        for number in Card.Variant.allCases {
+            for color in Card.Variant.allCases {
+                for shape in Card.Variant.allCases {
+                    for fill in Card.Variant.allCases {
+                        cards.append(Card(number: number,
+                                          color: color,
+                                          shape: shape,
+                                          fill: fill))
+                    }
+                }
+            }
+        }
+    }
 }
-
-//extension Int {
-//    var arc4random: Int {
-//        if self > 0 {
-//            return Int(arc4random_uniform(UInt32(self)))
-//        } else if self < 0 {
-//            return Int(arc4random_uniform(UInt32(abs(self))))
-//        } else {
-//            return 0
-//        }
-//    }
-//}

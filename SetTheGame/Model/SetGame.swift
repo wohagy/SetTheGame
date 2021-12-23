@@ -3,6 +3,9 @@ import Foundation
 
 struct SetGame {
     
+    private var deck = SetCardDeck()
+    var deckCount: Int {return deck.cards.count}
+    
     private(set) var flipCount = 0
     private(set) var score = 0
     private(set) var numberSets = 0
@@ -12,8 +15,6 @@ struct SetGame {
     private(set) var cardsTryMatched = [Card]()
     private(set) var cardsRemoved = [Card]()
     
-    private var deck = SetCardDeck()
-    var deckCount: Int {return deck.cards.count}
     
     var isSet: Bool? {
         get {

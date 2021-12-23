@@ -2,14 +2,6 @@
 import Foundation
 
 struct Card: Equatable, CustomStringConvertible {
-//    static func == (lhs: Card, rhs: Card) -> Bool {
-//        return ((lhs.number==rhs.number) &&
-//                (lhs.color==rhs.color) &&
-//                (lhs.fill==rhs.fill) &&
-//                (lhs.shape)==(rhs.shape)
-//        )
-//    }
-    
     
     var description: String {return "\(number)-\(color)-\(shape)-\(fill)"}
     
@@ -18,13 +10,12 @@ struct Card: Equatable, CustomStringConvertible {
     let shape: Variant
     let fill: Variant
     
-    enum Variant: Int, CustomStringConvertible {
+    enum Variant: Int, CaseIterable, CustomStringConvertible {
         
         case v1 = 1
         case v2
         case v3
         
-        static var all: [Variant] {return [.v1,.v2,.v3]}
         var description: String {return String(self.rawValue)}
         var idx: Int {return (self.rawValue - 1)}
     }
@@ -37,6 +28,7 @@ struct Card: Equatable, CustomStringConvertible {
             cards.reduce(0, {$0 + $1.shape.rawValue}),
             cards.reduce(0, {$0 + $1.number.rawValue})
         ]
+        print("isSet func: sum = \(sum). Something: \(sum.reduce(true, { $0 && ($1 % 3 == 0) })) ")
         return sum.reduce(true, { $0 && ($1 % 3 == 0) })
     }
 }

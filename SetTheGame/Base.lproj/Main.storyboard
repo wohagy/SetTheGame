@@ -23,7 +23,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="pbz-D9-8xZ">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="91"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="gZm-QA-dE8" customClass="CardButton" customModule="SetTheGame" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="gZm-QA-dE8" customClass="SetCardButton" customModule="SetTheGame" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="87.5" height="91"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
@@ -37,8 +37,11 @@
                                                         <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aim-Zs-mGo"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="zd9-LB-PEW" customClass="CardButton" customModule="SetTheGame" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="zd9-LB-PEW" customClass="SetCardButton" customModule="SetTheGame" customModuleProvider="target">
                                                 <rect key="frame" x="95.5" y="0.0" width="87.5" height="91"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
@@ -52,8 +55,11 @@
                                                         <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qnf-PF-H7P"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Luf-fB-nGr" customClass="CardButton" customModule="SetTheGame" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Luf-fB-nGr" customClass="SetCardButton" customModule="SetTheGame" customModuleProvider="target">
                                                 <rect key="frame" x="191" y="0.0" width="87.5" height="91"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
@@ -67,8 +73,11 @@
                                                         <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bq8-zC-4L6"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="tbh-Qt-euz" customClass="CardButton" customModule="SetTheGame" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="tbh-Qt-euz" customClass="SetCardButton" customModule="SetTheGame" customModuleProvider="target">
                                                 <rect key="frame" x="286.5" y="0.0" width="87.5" height="91"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
@@ -82,13 +91,16 @@
                                                         <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bau-UQ-aPy"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="tDT-Bu-1mQ">
                                         <rect key="frame" x="0.0" y="99" width="374" height="91"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Q6c-Y1-4uS" customClass="CardButton" customModule="SetTheGame" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Q6c-Y1-4uS" customClass="SetCardButton" customModule="SetTheGame" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="87.5" height="91"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
@@ -102,8 +114,11 @@
                                                         <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="43e-Tm-HbV"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="1Zc-3H-H43" customClass="CardButton" customModule="SetTheGame" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="1Zc-3H-H43" customClass="SetCardButton" customModule="SetTheGame" customModuleProvider="target">
                                                 <rect key="frame" x="95.5" y="0.0" width="87.5" height="91"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
@@ -117,8 +132,11 @@
                                                         <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8b3-a8-sje"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="v9S-Is-Sip" customClass="CardButton" customModule="SetTheGame" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="v9S-Is-Sip" customClass="SetCardButton" customModule="SetTheGame" customModuleProvider="target">
                                                 <rect key="frame" x="191" y="0.0" width="87.5" height="91"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
@@ -132,8 +150,11 @@
                                                         <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TmJ-Rq-fxW"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="7DF-ap-ljn" customClass="CardButton" customModule="SetTheGame" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="7DF-ap-ljn" customClass="SetCardButton" customModule="SetTheGame" customModuleProvider="target">
                                                 <rect key="frame" x="286.5" y="0.0" width="87.5" height="91"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
@@ -147,13 +168,16 @@
                                                         <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qq1-lD-KL4"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="P1C-Vp-YdC">
                                         <rect key="frame" x="0.0" y="198" width="374" height="91"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ab5-oz-cGd" customClass="CardButton" customModule="SetTheGame" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ab5-oz-cGd" customClass="SetCardButton" customModule="SetTheGame" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="87.5" height="91"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
@@ -167,8 +191,11 @@
                                                         <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mHq-IR-Ylp"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="1Rj-J5-4W0" customClass="CardButton" customModule="SetTheGame" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="1Rj-J5-4W0" customClass="SetCardButton" customModule="SetTheGame" customModuleProvider="target">
                                                 <rect key="frame" x="95.5" y="0.0" width="87.5" height="91"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
@@ -182,8 +209,11 @@
                                                         <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g82-DE-fzA"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ycg-Gw-ojD" customClass="CardButton" customModule="SetTheGame" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ycg-Gw-ojD" customClass="SetCardButton" customModule="SetTheGame" customModuleProvider="target">
                                                 <rect key="frame" x="191" y="0.0" width="87.5" height="91"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
@@ -197,8 +227,11 @@
                                                         <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kyQ-qH-KXE"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="eVP-Aq-YtS" customClass="CardButton" customModule="SetTheGame" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="eVP-Aq-YtS" customClass="SetCardButton" customModule="SetTheGame" customModuleProvider="target">
                                                 <rect key="frame" x="286.5" y="0.0" width="87.5" height="91"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
@@ -212,13 +245,16 @@
                                                         <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JSD-xn-2ig"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Cwn-tB-KQe">
                                         <rect key="frame" x="0.0" y="297" width="374" height="91"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="rdg-E2-paj" customClass="CardButton" customModule="SetTheGame" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="rdg-E2-paj" customClass="SetCardButton" customModule="SetTheGame" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="87.5" height="91"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
@@ -232,8 +268,11 @@
                                                         <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A9o-es-ZpZ"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="MHA-G7-xRl" customClass="CardButton" customModule="SetTheGame" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="MHA-G7-xRl" customClass="SetCardButton" customModule="SetTheGame" customModuleProvider="target">
                                                 <rect key="frame" x="95.5" y="0.0" width="87.5" height="91"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
@@ -247,8 +286,11 @@
                                                         <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xWs-sk-Cih"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="RQf-SX-Jji" customClass="CardButton" customModule="SetTheGame" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="RQf-SX-Jji" customClass="SetCardButton" customModule="SetTheGame" customModuleProvider="target">
                                                 <rect key="frame" x="191" y="0.0" width="87.5" height="91"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
@@ -262,8 +304,11 @@
                                                         <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fVg-Cg-xwm"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="6tP-dA-8M2" customClass="CardButton" customModule="SetTheGame" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="6tP-dA-8M2" customClass="SetCardButton" customModule="SetTheGame" customModuleProvider="target">
                                                 <rect key="frame" x="286.5" y="0.0" width="87.5" height="91"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
@@ -277,13 +322,16 @@
                                                         <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eEX-do-ZUz"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="flJ-1s-J8n">
                                         <rect key="frame" x="0.0" y="396" width="374" height="91"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="jZ1-ys-ZfL" customClass="CardButton" customModule="SetTheGame" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="jZ1-ys-ZfL" customClass="SetCardButton" customModule="SetTheGame" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="87.5" height="91"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
@@ -297,8 +345,11 @@
                                                         <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G7M-Mw-VBl"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="1We-I3-Rnp" customClass="CardButton" customModule="SetTheGame" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="1We-I3-Rnp" customClass="SetCardButton" customModule="SetTheGame" customModuleProvider="target">
                                                 <rect key="frame" x="95.5" y="0.0" width="87.5" height="91"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
@@ -312,8 +363,11 @@
                                                         <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i9G-BS-2fF"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="JQ0-mn-d1E" customClass="CardButton" customModule="SetTheGame" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="JQ0-mn-d1E" customClass="SetCardButton" customModule="SetTheGame" customModuleProvider="target">
                                                 <rect key="frame" x="191" y="0.0" width="87.5" height="91"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
@@ -327,8 +381,11 @@
                                                         <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Frn-JN-i7T"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="f7i-46-X1Z" customClass="CardButton" customModule="SetTheGame" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="f7i-46-X1Z" customClass="SetCardButton" customModule="SetTheGame" customModuleProvider="target">
                                                 <rect key="frame" x="286.5" y="0.0" width="87.5" height="91"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
@@ -342,13 +399,16 @@
                                                         <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gbW-uc-D9s"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Y2g-qr-OHj">
                                         <rect key="frame" x="0.0" y="495" width="374" height="91"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Atz-Zh-Bnk" customClass="CardButton" customModule="SetTheGame" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Atz-Zh-Bnk" customClass="SetCardButton" customModule="SetTheGame" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="87.5" height="91"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
@@ -362,8 +422,11 @@
                                                         <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ww8-Pr-yUt"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="TnB-qc-BeL" customClass="CardButton" customModule="SetTheGame" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="TnB-qc-BeL" customClass="SetCardButton" customModule="SetTheGame" customModuleProvider="target">
                                                 <rect key="frame" x="95.5" y="0.0" width="87.5" height="91"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
@@ -377,8 +440,11 @@
                                                         <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oIB-oX-8BD"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="vwq-0K-XOb" customClass="CardButton" customModule="SetTheGame" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="vwq-0K-XOb" customClass="SetCardButton" customModule="SetTheGame" customModuleProvider="target">
                                                 <rect key="frame" x="191" y="0.0" width="87.5" height="91"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
@@ -392,8 +458,11 @@
                                                         <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nkz-7K-Sfo"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="4FE-Wc-KMs" customClass="CardButton" customModule="SetTheGame" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="4FE-Wc-KMs" customClass="SetCardButton" customModule="SetTheGame" customModuleProvider="target">
                                                 <rect key="frame" x="286.5" y="0.0" width="87.5" height="91"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="22"/>
@@ -407,6 +476,9 @@
                                                         <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nhj-Yh-10o"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -424,11 +496,17 @@
                                         <rect key="frame" x="127.5" y="0.0" width="119" height="42"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="New game"/>
+                                        <connections>
+                                            <action selector="newGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gY8-KT-RVh"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2vm-14-ZtP" customClass="CardButton" customModule="SetTheGame" customModuleProvider="target">
                                         <rect key="frame" x="254.5" y="0.0" width="119.5" height="42"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="25"/>
                                         <state key="normal" title="Deal 3+"/>
+                                        <connections>
+                                            <action selector="deal3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SRS-ye-xht"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -471,30 +549,36 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outletCollection property="cards" destination="zd9-LB-PEW" collectionClass="NSMutableArray" id="zXD-3A-HYU"/>
-                        <outletCollection property="cards" destination="Luf-fB-nGr" collectionClass="NSMutableArray" id="gR5-Qf-Cq5"/>
-                        <outletCollection property="cards" destination="gZm-QA-dE8" collectionClass="NSMutableArray" id="dsU-U9-FM0"/>
-                        <outletCollection property="cards" destination="tbh-Qt-euz" collectionClass="NSMutableArray" id="Gho-AT-Lc5"/>
-                        <outletCollection property="cards" destination="7DF-ap-ljn" collectionClass="NSMutableArray" id="8KI-7H-S8H"/>
-                        <outletCollection property="cards" destination="Q6c-Y1-4uS" collectionClass="NSMutableArray" id="vxb-lh-9cO"/>
-                        <outletCollection property="cards" destination="v9S-Is-Sip" collectionClass="NSMutableArray" id="MLU-Ro-qrM"/>
-                        <outletCollection property="cards" destination="1Zc-3H-H43" collectionClass="NSMutableArray" id="n9d-cE-OBP"/>
-                        <outletCollection property="cards" destination="eVP-Aq-YtS" collectionClass="NSMutableArray" id="YQM-J9-4Jz"/>
-                        <outletCollection property="cards" destination="1Rj-J5-4W0" collectionClass="NSMutableArray" id="tI6-yG-t4Z"/>
-                        <outletCollection property="cards" destination="ab5-oz-cGd" collectionClass="NSMutableArray" id="OSL-Ie-Kj9"/>
-                        <outletCollection property="cards" destination="ycg-Gw-ojD" collectionClass="NSMutableArray" id="M99-iv-bD4"/>
-                        <outletCollection property="cards" destination="RQf-SX-Jji" collectionClass="NSMutableArray" id="ga8-MB-MlU"/>
-                        <outletCollection property="cards" destination="MHA-G7-xRl" collectionClass="NSMutableArray" id="etd-9Y-cj7"/>
-                        <outletCollection property="cards" destination="rdg-E2-paj" collectionClass="NSMutableArray" id="M3K-I0-OeS"/>
-                        <outletCollection property="cards" destination="6tP-dA-8M2" collectionClass="NSMutableArray" id="HdA-r9-wHi"/>
-                        <outletCollection property="cards" destination="1We-I3-Rnp" collectionClass="NSMutableArray" id="jpc-kY-Tl7"/>
-                        <outletCollection property="cards" destination="JQ0-mn-d1E" collectionClass="NSMutableArray" id="cB9-Ri-CAv"/>
-                        <outletCollection property="cards" destination="jZ1-ys-ZfL" collectionClass="NSMutableArray" id="56s-Ad-SKO"/>
-                        <outletCollection property="cards" destination="f7i-46-X1Z" collectionClass="NSMutableArray" id="3Kq-Mm-p8S"/>
-                        <outletCollection property="cards" destination="TnB-qc-BeL" collectionClass="NSMutableArray" id="BP5-Nm-mnu"/>
-                        <outletCollection property="cards" destination="vwq-0K-XOb" collectionClass="NSMutableArray" id="fbK-TG-eSK"/>
-                        <outletCollection property="cards" destination="4FE-Wc-KMs" collectionClass="NSMutableArray" id="2Ja-an-Wam"/>
-                        <outletCollection property="cards" destination="Atz-Zh-Bnk" collectionClass="NSMutableArray" id="8eS-FJ-eK6"/>
+                        <outlet property="dealButton" destination="2vm-14-ZtP" id="oST-jq-ReM"/>
+                        <outlet property="deckCountLabel" destination="utc-sX-9ft" id="yLB-Q4-0cP"/>
+                        <outlet property="hintButton" destination="7b7-Of-FqD" id="Mpe-Jz-DqC"/>
+                        <outlet property="messageLabel" destination="cYD-6Y-IKe" id="tvJ-lV-r9Y"/>
+                        <outlet property="newGameButton" destination="Gq6-ah-mYz" id="S5h-fi-dyr"/>
+                        <outlet property="scoreLabel" destination="K2Z-oS-Ib3" id="eFg-7c-ssj"/>
+                        <outletCollection property="cardButtons" destination="gZm-QA-dE8" collectionClass="NSMutableArray" id="cBK-J0-Vgu"/>
+                        <outletCollection property="cardButtons" destination="zd9-LB-PEW" collectionClass="NSMutableArray" id="Ad5-e9-zVM"/>
+                        <outletCollection property="cardButtons" destination="Luf-fB-nGr" collectionClass="NSMutableArray" id="naZ-eX-Z7I"/>
+                        <outletCollection property="cardButtons" destination="tbh-Qt-euz" collectionClass="NSMutableArray" id="DK5-Ku-Sdh"/>
+                        <outletCollection property="cardButtons" destination="Q6c-Y1-4uS" collectionClass="NSMutableArray" id="LAC-Po-aYI"/>
+                        <outletCollection property="cardButtons" destination="1Zc-3H-H43" collectionClass="NSMutableArray" id="7bq-0G-6Un"/>
+                        <outletCollection property="cardButtons" destination="v9S-Is-Sip" collectionClass="NSMutableArray" id="hpa-3z-MHc"/>
+                        <outletCollection property="cardButtons" destination="7DF-ap-ljn" collectionClass="NSMutableArray" id="k5f-bf-gg4"/>
+                        <outletCollection property="cardButtons" destination="ab5-oz-cGd" collectionClass="NSMutableArray" id="WS9-xk-4Sq"/>
+                        <outletCollection property="cardButtons" destination="1Rj-J5-4W0" collectionClass="NSMutableArray" id="FU2-Pj-dJd"/>
+                        <outletCollection property="cardButtons" destination="ycg-Gw-ojD" collectionClass="NSMutableArray" id="qWr-KO-KCr"/>
+                        <outletCollection property="cardButtons" destination="eVP-Aq-YtS" collectionClass="NSMutableArray" id="XhP-Ct-N3i"/>
+                        <outletCollection property="cardButtons" destination="rdg-E2-paj" collectionClass="NSMutableArray" id="1O3-ih-6fU"/>
+                        <outletCollection property="cardButtons" destination="MHA-G7-xRl" collectionClass="NSMutableArray" id="nvQ-La-VzC"/>
+                        <outletCollection property="cardButtons" destination="RQf-SX-Jji" collectionClass="NSMutableArray" id="f4R-mR-vUA"/>
+                        <outletCollection property="cardButtons" destination="6tP-dA-8M2" collectionClass="NSMutableArray" id="PED-UX-Uws"/>
+                        <outletCollection property="cardButtons" destination="jZ1-ys-ZfL" collectionClass="NSMutableArray" id="wfJ-aF-xf1"/>
+                        <outletCollection property="cardButtons" destination="1We-I3-Rnp" collectionClass="NSMutableArray" id="AYB-44-2LW"/>
+                        <outletCollection property="cardButtons" destination="JQ0-mn-d1E" collectionClass="NSMutableArray" id="VVs-wV-KdF"/>
+                        <outletCollection property="cardButtons" destination="f7i-46-X1Z" collectionClass="NSMutableArray" id="p6o-yp-tfm"/>
+                        <outletCollection property="cardButtons" destination="Atz-Zh-Bnk" collectionClass="NSMutableArray" id="aSc-mr-sLf"/>
+                        <outletCollection property="cardButtons" destination="TnB-qc-BeL" collectionClass="NSMutableArray" id="IOa-JC-FzR"/>
+                        <outletCollection property="cardButtons" destination="vwq-0K-XOb" collectionClass="NSMutableArray" id="bpf-vQ-Koh"/>
+                        <outletCollection property="cardButtons" destination="4FE-Wc-KMs" collectionClass="NSMutableArray" id="vD8-tB-kLt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
