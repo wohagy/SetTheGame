@@ -44,8 +44,10 @@ struct SetGame {
          let cardChoosen = cardsOnTable[index]
          if !cardsRemoved.contains(cardChoosen) && !cardsTryMatched.contains(cardChoosen){
              if  isSet != nil{
-                 if isSet! { replaceOrRemove3Cards()}
-                  isSet = nil
+                if isSet! {
+                    replaceOrRemove3Cards()
+                }
+                isSet = nil
              }
              if cardsSelected.count == 2, !cardsSelected.contains(cardChoosen){
                  cardsSelected += [cardChoosen]
