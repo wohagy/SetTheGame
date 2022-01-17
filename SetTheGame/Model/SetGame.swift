@@ -88,6 +88,18 @@ struct SetGame {
             cardsTryMatched.removeAll()
         }
     
+    init() {
+        for _ in 1...Constants.startNumberCards {
+         if let card = deck.draw() {
+            cardsOnTable += [card]
+            }
+        }
+    }
+    
+    mutating func shuffle(){
+        cardsOnTable.shuffle()
+    }
+    
     // MARK: SetGame constants
     
     private struct Points {
