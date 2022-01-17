@@ -5,7 +5,16 @@ class ViewController: UIViewController {
     
     private var game = SetGame()
     
-    @IBOutlet weak var boardView: BoardView!
+    @IBOutlet weak var boardView: BoardView! {
+        didSet {
+            let swipe = UISwipeGestureRecognizer(target: self, action: #selector(deal3(_:)))
+            swipe.direction = .down
+            boardView.addGestureRecognizer(swipe)
+            
+            let rotate = UIRotationGestureRecognizer(target: self, action: #selector(reshuffle))
+            boardView.addGestureRecognizer(rotate)
+        }
+    }
     
     
     @IBOutlet weak var messageLabel: UILabel!
@@ -62,8 +71,7 @@ class ViewController: UIViewController {
         cardView.addGestureRecognizer(tap)
     }
     
-    @objc
-    private func tapCard(recognizedBy recognizer: UITapGestureRecognizer) {
+    @objc private func tapCard(recognizedBy recognizer: UITapGestureRecognizer) {
         switch recognizer.state {
         case .ended:
             if  let cardView = recognizer.view! as? SetCardView {
@@ -73,6 +81,16 @@ class ViewController: UIViewController {
             break
         }
         updateViewFromModel()
+    }
+    
+    @objc private func reshuffle(_ sender: UIGestureRecognizer) {
+        switch sender.state {
+        case .ended:
+            game.shuffle()
+            updateViewFromModel()
+        default:
+            break
+        }
     }
     
     private func updateCardView(_ cardView: SetCardView, for card: Card){
