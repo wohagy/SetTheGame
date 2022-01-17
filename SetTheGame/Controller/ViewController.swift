@@ -5,108 +5,123 @@ class ViewController: UIViewController {
     
     private var game = SetGame()
     
-    var colors = [#colorLiteral(red: 1, green: 0.4163245823, blue: 0, alpha: 1), #colorLiteral(red: 0.6679978967, green: 0.4751212597, blue: 0.2586010993, alpha: 1), #colorLiteral(red: 0.01680417731, green: 0.1983509958, blue: 1, alpha: 1)]
-    var strokeWidths:[CGFloat] = [ -10, 10, -10]
-    var alphas:[CGFloat] = [1.0, 0.60, 0.15]
+    @IBOutlet weak var boardView: BoardView! {
+        didSet {
+            let swipe = UISwipeGestureRecognizer(target: self, action: #selector(deal3(_:)))
+            swipe.direction = .down
+            boardView.addGestureRecognizer(swipe)
+            
+            let rotate = UIRotationGestureRecognizer(target: self, action: #selector(reshuffle))
+            boardView.addGestureRecognizer(rotate)
+        }
+    }
+    
     
     @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var deckCountLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
     
-    @IBOutlet var cardButtons: [SetCardButton]!{
-        didSet {
-            for button in cardButtons{
-                button.strokeWidths = strokeWidths
-                button.colors = colors
-                button.alphas = alphas
-            }
-        }
-    }
-    
     @IBOutlet weak var dealButton: CardButton!
     @IBOutlet weak var newGameButton: CardButton!
     @IBOutlet weak var hintButton: CardButton!
     
-    @IBAction func touchCard(_ sender: SetCardButton) {
-        if let cardNumber = cardButtons.firstIndex(of: sender) {
-            game.chooseCard(at: cardNumber)
-            updateViewFromModel()
-        } else {
-            print("choosen card was not in cardButtons")
-        }
-    }
-    
-    
     private func updateViewFromModel() {
-        updateButtonsFromModel()
+        updateCardViewsFromModel()
+        // update Buttons and Labels
         deckCountLabel.text = "Deck: \(game.deckCount )"
         scoreLabel.text = "Score: \(game.score) / \(game.numberSets)"
-        dealButton.disable = (game.cardsOnTable.count) >= cardButtons.count || game.deckCount == 0
-      
+        if let itIsSet = game.isSet {
+            messageLabel.text = itIsSet ? "СОВПАДЕНИЕ" :"НЕСОВПАДЕНИЕ"
+        } else {
+            messageLabel.text = ""
+        }
+        dealButton.isHidden =  game.deckCount == 0
     }
     
-    
-    private func updateButtonsFromModel() {
-        messageLabel.text = ""
+    private func updateCardViewsFromModel() {
+        // remove cards from boardView
+        if boardView.cardViews.count - game.cardsOnTable.count > 0 {
+            let cardViews = boardView.cardViews [..<game.cardsOnTable.count ]
+            boardView.cardViews = Array(cardViews)
+        }
+        let numberCardViews =  boardView.cardViews.count
         
-        for index in cardButtons.indices {
-            let button = cardButtons[index]
-            if index < game.cardsOnTable.count {
-                //--------------------------------
-                let card = game.cardsOnTable[index]
-                button.setCard = card
-                //-----------Selected----------------------
-                button.setBorderColor(color:
-                                        game.cardsSelected.contains(card) ? Colors.selected : #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0))
-                //-----------TryMatched----------------------
-                if let itIsSet = game.isSet {
-                    if game.cardsTryMatched.contains(card) {
-                        button.setBorderColor(color:
-                                                itIsSet ? Colors.matched: Colors.misMatched)
-                    }
-                    messageLabel.text = itIsSet ? "СОВПАДЕНИЕ" :"НЕСОВПАДЕНИЕ"
-                }
-                //--------------------------------
-            } else {
-                button.setCard = nil
+        for index in game.cardsOnTable.indices {
+            let card = game.cardsOnTable[index]
+            if  index > (numberCardViews - 1) { // new cards
+                
+                let cardView = SetCardView()
+                updateCardView(cardView,for: card)
+                addTapGestureRecognizer(for: cardView) // gesture tap
+                boardView.cardViews.append(cardView)
+                
+            } else {                                // old cards
+                let cardView = boardView.cardViews [index]
+                updateCardView(cardView,for: card)
             }
         }
     }
     
-    
-    @IBAction func deal3(_ sender: CardButton) {
-        if (game.cardsOnTable.count + 3) <= cardButtons.count {
-            game.deal3()
-            updateViewFromModel()
-        }
+    private func addTapGestureRecognizer(for cardView: SetCardView) {
+        let tap = UITapGestureRecognizer(
+            target: self,
+            action: #selector(tapCard(recognizedBy: )))
+        tap.numberOfTapsRequired = 1
+        tap.numberOfTouchesRequired = 1
+        cardView.addGestureRecognizer(tap)
     }
     
-    
-    @IBAction func newGame(_ sender: CardButton) {
-        game = SetGame()
-        cardButtons.forEach { $0.setCard = nil }
+    @objc private func tapCard(recognizedBy recognizer: UITapGestureRecognizer) {
+        switch recognizer.state {
+        case .ended:
+            if  let cardView = recognizer.view! as? SetCardView {
+                game.chooseCard(at: boardView.cardViews.firstIndex(of: cardView)!)
+            }
+        default:
+            break
+        }
         updateViewFromModel()
     }
     
-    //     MARK:    ViewController lifecycle methods
+    @objc private func reshuffle(_ sender: UIGestureRecognizer) {
+        switch sender.state {
+        case .ended:
+            game.shuffle()
+            updateViewFromModel()
+        default:
+            break
+        }
+    }
+    
+    private func updateCardView(_ cardView: SetCardView, for card: Card){
+        cardView.symbolInt =  card.shape.rawValue
+        cardView.fillInt = card.fill.rawValue
+        cardView.colorInt = card.color.rawValue
+        cardView.count =  card.number.rawValue
+        cardView.isSelected =  game.cardsSelected.contains(card)
+        if let itIsSet = game.isSet {
+            if game.cardsTryMatched.contains(card) {
+                cardView.isMatched = itIsSet
+            }
+        } else {
+            cardView.isMatched = nil
+        }
+    }
+    
+    @IBAction func deal3(_ sender: CardButton) {
+        game.deal3()
+        updateViewFromModel()
+    }
+    
+    @IBAction func newGame(_ sender: CardButton) {
+        game = SetGame()
+        boardView.cardViews.removeAll()
+        updateViewFromModel()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad ()
         updateViewFromModel()
-    }
-}
-
-extension ViewController {
-    //------------------ Constants -------------
-    private struct Colors {
-        static let hint = #colorLiteral(red: 1, green: 0.5212053061, blue: 1, alpha: 1)
-        static let selected = #colorLiteral(red: 1, green: 0.5763723254, blue: 0, alpha: 1)
-        static let matched = #colorLiteral(red: 0, green: 0.9914394021, blue: 1, alpha: 1)
-        static var misMatched = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-    }
-    
-    private struct Constants {
-        static let flashTime = 1.5
     }
 }
 
